@@ -30,8 +30,31 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/01.png);
     position: relative;
+}
+
+#shoes-1 {
+    background-image: url(../img/01.png);
+}
+
+#shoes-2 {
+    background-image: url(../img/02.png);
+}
+
+#shoes-3 {
+    background-image: url(../img/03.png);
+}
+
+
+
+.fullpage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0 0 0 0.5);
 }
 
 .full-page .content {
