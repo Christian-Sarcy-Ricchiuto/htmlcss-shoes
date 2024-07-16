@@ -1,0 +1,43 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* Generics */
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+/* Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.full-page {
+    height: 100vh;
+    color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/01.png);
+    position: relative;
+}
+
+.full-page .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50% -50%);
+}
