@@ -4,8 +4,11 @@
     padding: 0;
     box-sizing: 0;
 }
+ html {
+    overflow-y: hidden;
+ }
 
-/* Generics */
+ /* Generics */
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
@@ -63,4 +66,11 @@ h2 {
     left: 50%;
     text-align: center;
     transform: translate(-50% -50%);
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    right: 20px;
+    top:50%;
 }
