@@ -13,12 +13,29 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-h1 {
-    font-size: x-large;
+html {
+    overflow-y:hidden;
+    scroll-behavior: smooth;
 }
 
-h2 {
-    font-size: large;
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.content {
+    max-width: 45%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Utilities */
@@ -29,48 +46,52 @@ h2 {
 
 .full-page {
     height: 100vh;
-    color: antiquewhite;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
-#shoes-1 {
-    background-image: url(../img/01.png);
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#shoes-2 {
-    background-image: url(../img/02.png);
+/* Backgrounds */
+.bk-red {
+    color: yellow;
+    background-color: red;
 }
 
-#shoes-3 {
-    background-image: url(../img/03.png);
+.bk-green {
+    color: yellow;
+    background-color: green;
 }
 
-
-
-.fullpage::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0 0 0 0.5);
-}
-
-.full-page .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50% -50%);
+.bk-yellow {
+    color: green;
+    background-color: yellow;
 }
 
 /* Side Menu */
-.side-menu {
+#side-menu {
     position: fixed;
     right: 20px;
-    top:50%;
+    top: 20px;
+}
+
+#side-menu a {
+  color:black;
+  background-color: antiquewhite;
+  font-size: 36px;
+  display: inline-block;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+}
+
+#side-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
